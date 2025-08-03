@@ -132,3 +132,38 @@ button {
     color: black;
     position: relative;
 }
+
+.heart-stroke {
+    stroke-width: 10;
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    animation: desenhar 3s ease forwards;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+@keyframes desenhar {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.svg-heart-wrapper {
+    width: 90%;
+    max-width: 440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.svg-heart {
+    width: 100%;
+    height: auto;
+}
+
+.svg-texto {
+    font-family: cursive;
+    color: #d63384;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
